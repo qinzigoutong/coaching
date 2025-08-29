@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | 联系我</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-brand" href="index.html">Coaching / 治疗性教练</a>
+        <div class="nav-links">
+          <a href="index.html">Home / 主页</a>
+          <a href="contact.html">Contact / 联系</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+        <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/xbladyge" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <!-- Honeypot field for spam prevention -->
+            <div style="display:none;">
+                <label for="website">Leave this field empty</label>
+                <input type="text" id="website" name="website">
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+        <hr>
+        <h1>联系我</h1>
+        <form action="https://formspree.io/f/xbladyge" method="POST">
+            <label for="name-cn">姓名：</label>
+            <input type="text" id="name-cn" name="name" required>
+            
+            <label for="email-cn">您的邮箱：</label>
+            <input type="email" id="email-cn" name="email" required>
+            
+            <label for="message-cn">留言：</label>
+            <textarea id="message-cn" name="message" required></textarea>
+            
+            <!-- Honeypot field for spam prevention -->
+            <div style="display:none;">
+                <label for="website-cn">请勿填写此栏</label>
+                <input type="text" id="website-cn" name="website">
+            </div>
+
+            <button type="submit">发送</button>
+        </form>
+        <p style="margin-top:1em;font-size:0.9em;">
+            <b>Note / 注意：</b>  
+            Your message will be sent to my email. The form is protected against spam by a hidden field.  
+            您的信息将发送至我的邮箱。表单通过隐藏栏防止垃圾邮件。
+        </p>
+    </main>
+    <footer>
+        &copy; 2025 Therapeutic Coaching Service
+    </footer>
+</body>
+</html>
